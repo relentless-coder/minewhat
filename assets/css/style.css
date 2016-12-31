@@ -1,0 +1,165 @@
+/*====================================================================*/
+/*                     My CSS                                        */
+/*==================================================================*/
+
+html {
+  height: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+body {
+  max-width: 100%;
+  font-family: ubuntu;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-size: 16px;
+}
+
+#description {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#navigation {
+  max-width: 100%;
+  padding: 3% 1%;
+  background-color: rgb(244, 130, 130);
+}
+
+#popup {
+  max-width: 30%;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  padding: 2%;
+  border: 1px solid rgb(226, 226, 226);
+  box-shadow: 2px 2px 1px -1px rgb(226,226, 226), -2px -2px 1px -1px rgb(226,226, 226);
+  animation-name: slideInOne;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+#popup > p {
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 1.09em;
+}
+
+#popup > .fa-times {
+  position: absolute;
+  cursor: pointer;
+  top: 2%;
+  right: 2%;
+  font-weight: lighter;
+}
+
+.pop-product {
+  max-width: 48%;
+  border: 1px solid rgb(222, 222, 222);
+}
+
+.info {
+  background: rgb(240, 240, 240);
+  margin-top: -2.5%;
+  padding: 5%;
+}
+
+.info > a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8em;
+}
+
+.info > h5 {
+  margin-top: 0;
+  margin-bottom: 0%;
+}
+
+#item-one {
+  margin-right: 0.5%;
+  display: inline-block;
+}
+
+#item-two {
+  display: inline-block;
+  margin-left: 0.5%;
+
+}
+
+.pop-image > img {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes slideInOne {
+  from {
+    position: fixed;
+    right: -50%;
+    bottom: 2%;
+  }
+  to {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+  }
+}
+
+@keyframes slideInTwo {
+  from {
+    position: fixed;
+    right: -50%;
+    bottom: 2%;
+  }
+  to {
+    position: fixed;
+    right: 8%;
+    border: 2%;
+  }
+}
+
+@media only screen and (max-width: 1064px) {
+  #popup {
+    max-width: 40%;
+  }
+}
+
+@media only screen and (max-width: 883px) {
+  #popup {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  #popup {
+    max-width: 80%;
+    right: 8%;
+    animation-name: slideInTwo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  #popup {
+    max-width: 95%;
+    right: 0%;
+    animation-name: slideInOne;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+  }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 1025px) and (min-width: 770px) {
+
+  body {
+    font-size: 20px;
+  }
+
+  #popup {
+    max-width: 40%;
+  }
+}
