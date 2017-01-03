@@ -1,0 +1,99 @@
+[
+  {
+    "img": "assets/img/b1.jpg",
+    "title": "b.box",
+    "more": "https://somemorebbox.com",
+    "text": "great b.box"
+  },
+  {
+    "img": "assets/img/b3.jpg",
+    "title": "b.box",
+    "more": "https://somemorebbox.com",
+    "text": "great b.box"
+  },
+  {
+    "img": "assets/img/g1.jpg",
+    "title": "party wear",
+    "more": "https://somemoreparty.com",
+    "text": "great dresses"
+  },
+  {
+    "img": "assets/img/g3.jpg",
+    "title": "party wear",
+    "more": "https://somemoreparty.com",
+    "text": "great dresses"
+  },
+  {
+    "img": "assets/img/h1.jpg",
+    "title": "sofa",
+    "more": "https://somemoresofa.com",
+    "text": "great sofa"
+  },
+  {
+    "img": "assets/img/h2.jpg",
+    "title": "sofa",
+    "more": "https://somemoreparty.com",
+    "text": "great sofa"
+  },
+  {
+    "img": "assets/img/g2.jpg",
+    "title": "leggings",
+    "more": "https://somemoreleggings.com",
+    "text": "great leggings"
+  },
+  {
+    "img": "assets/img/b2.jpg",
+    "title": "leggings",
+    "more": "https://somemoreleggings.com",
+    "text": "great leggings"
+  },
+  {
+    "img": "assets/img/n1.jpg",
+    "title": "face wash",
+    "more": "https://somemoreparty.com",
+    "text": "great face wash"
+  },
+  {
+    "img": "assets/img/n2.jpg",
+    "title": "face wash",
+    "more": "https://somemoreparty.com",
+    "text": "great face wash"
+  },
+  {
+    "img": "assets/img/h3.jpg",
+    "title": "sofa",
+    "more": "https://somemoresofa.com",
+    "text": "great sofa"
+  },
+  {
+    "img": "assets/img/n3.jpg",
+    "title": "sofa",
+    "more": "https://somemoreparty.com",
+    "text": "great sofa"
+  },
+  {
+    "img": "assets/img/p1.jpg",
+    "title": "shirts",
+    "more": "https://somemoreshirts.com",
+    "text": "great shirts"
+  },
+  {
+    "img": "assets/img/r1.jpg",
+    "title": "shirts",
+    "more": "https://somemoreshirts.com",
+    "text": "great shirts"
+  },
+  {
+    "img": "assets/img/r2.jpg",
+    "title": "tops",
+    "more": "https://somemoretops.com",
+    "text": "great tops"
+  },
+  {
+    "img": "assets/img/r2.jpg",
+    "title": "tops",
+    "more": "https://somemoretops.com",
+    "text": "great tops"
+  }
+
+]

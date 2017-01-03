@@ -22,21 +22,23 @@
         </p>
     </section>
     <div id="popup">
-        <i class="fa fa-times" aria-hidden="true"></i>
-        <p>Are you looking for <strong>'Red tops'</strong>?</p>
-        <div class="pop-product" id="item-one">
-            <div class="pop-img"><img src="assets/img/r2.jpg" alt="" width="50%"><img src="assets/img/r1.jpg" alt="" width="50%"></div>
-            <div class="info">
-                <h5>Cotton red tops</h5>
-                <a href="">See more</a></div>
-        </div>
-        <div class="pop-product" id="item-two">
-            <div class="pop-img"><img src="assets/img/r2.jpg" alt="" width="50%"><img src="assets/img/r3.jpg" width="50%" alt=""></div>
-            <div class="info">
-                <h5>Cotton tops</h5>
-                <a href="">See more</a></div>
-        </div>
+
     </div>
+    <script id="popup-product" type="x-handlebars-template">
+    {{#limit_to this 1}}
+    <p>Are you looking for <strong>'{{title}}'</strong>?</p>
+    {{/limit_to}}
+    {{#each this}}
+        <div class="pop-product" id="item-{{@index}}">
+            <div class="product-images" style="background-image: url('{{img}}')"></div>
+            <div class="info">
+                <h5>{{text}}</h5>
+                <a href="{{more}}">See more</a>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
     <script src="assets/js/style.js"></script>
 </body>
 

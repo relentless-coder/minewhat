@@ -6,6 +6,10 @@
 
 /*==================================================================*/
 
+*{
+  box-sizing: border-box;
+}
+
 html {
     height: 100%;
     max-width: 100%;
@@ -34,7 +38,7 @@ body {
 }
 
 #popup {
-    max-width: 30%;
+    max-width: 40%;
     position: fixed;
     bottom: 2%;
     right: 2%;
@@ -52,14 +56,6 @@ body {
     font-size: 1.09em;
 }
 
-#popup>.fa-times {
-    position: absolute;
-    cursor: pointer;
-    top: 2%;
-    right: 2%;
-    font-weight: lighter;
-}
-
 .pop-product {
     max-width: 48%;
     border: 1px solid rgb(222, 222, 222);
@@ -68,7 +64,8 @@ body {
 .info {
     background: rgb(240, 240, 240);
     margin-top: -2.5%;
-    padding: 5%;
+    padding: 10% 5%;
+    width: 120px;
 }
 
 .info>a {
@@ -82,19 +79,21 @@ body {
     margin-bottom: 0%;
 }
 
-#item-one {
+#item-0 {
     margin-right: 0.5%;
-    display: inline-block;
+    float: left;
 }
 
-#item-two {
-    display: inline-block;
+#item-1 {
+    float: right;
     margin-left: 0.5%;
 }
 
-.pop-image>img {
-    max-width: 100%;
-    height: auto;
+.product-images {
+  width: 120px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
 }
 
 @keyframes slideInOne {
@@ -110,48 +109,15 @@ body {
     }
 }
 
-@keyframes slideInTwo {
-    from {
-        position: fixed;
-        right: -50%;
-        bottom: 2%;
-    }
-    to {
-        position: fixed;
-        right: 8%;
-        border: 2%;
-    }
-}
-
-@media only screen and (max-width: 1064px) {
-    #popup {
-        max-width: 40%;
-    }
-}
-
-@media only screen and (max-width: 883px) {
-    #popup {
-        max-width: 50%;
-    }
-}
-
 @media only screen and (max-width: 615px) {
     #popup {
         max-width: 80%;
-        right: 8%;
-        animation-name: slideInTwo;
-        animation-duration: 1s;
-        animation-timing-function: linear;
     }
 }
 
 @media only screen and (max-width: 385px) {
     #popup {
-        max-width: 95%;
-        right: 0%;
-        animation-name: slideInOne;
-        animation-duration: 1s;
-        animation-timing-function: linear;
+        max-width: 100%;
     }
 }
 
@@ -160,6 +126,6 @@ body {
         font-size: 20px;
     }
     #popup {
-        max-width: 40%;
+        max-width: 60%;
     }
 }
